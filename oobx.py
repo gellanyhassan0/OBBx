@@ -26,7 +26,7 @@ while 1:
     #wait to accept a connection - blocking call
         conn, addr = s.accept()
         print('Connected')
-        print ('Destination address & port:', addr )
+        print ('Source address & port:', addr )
         
         while True:
                 dataFromClient = conn.recv(1024)
